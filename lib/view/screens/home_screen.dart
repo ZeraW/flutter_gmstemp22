@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutter_gmstemp/constant_values.dart';
+import 'package:flutter_gmstemp/view/screens/contactus_screen.dart';
+import 'package:flutter_gmstemp/view/screens/gallery_screen.dart';
 import 'package:flutter_gmstemp/view/screens/project_screen.dart';
 import 'package:flutter_gmstemp/view/screens/service_screen.dart';
 
@@ -12,13 +14,14 @@ Color colorssss = Consts().colorssss;
 var _about_us = "About Us";
 const _product = "Product";
 const _service = "Service";
-var _gallery = "Gallery";
+const _gallery = "Gallery";
 const _project = "Project";
-var _contact_us = "Contact Us";
+const _contact_us = "Contact Us";
 var _client = "Client";
 var _lang = "عربي";
 
 final slider = Carousel(
+
   dotSize: 4.0,
   dotSpacing: 12.0,
   indicatorBgPadding: 8.0,
@@ -30,6 +33,10 @@ final slider = Carousel(
   ],
 );
 
+void me(){
+  Carousel x;
+
+}
 
 
 class HomePage extends StatefulWidget {
@@ -146,6 +153,12 @@ class _BuildHomePage extends State<HomePage> {
               break;
             case _service :
               return ServiceScreen();
+              break;
+            case _contact_us:
+              return ContactUsScreen();
+              break;
+            case _gallery:
+              return GalleryScreen();
               break;
 
 

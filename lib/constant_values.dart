@@ -8,5 +8,12 @@ class Consts {
 
   var serviceRow = Color(0xFF431D4793);
   var serviceImg = Color(0xFFE5E4E4);
+  var background = Color(0xFFF1F1F1);
+
+
+  static const String phone = "phone";
+  static const String url = "url";
+
+  static const String imageUrl = "http://gms-sms.com:89";
 
 }
